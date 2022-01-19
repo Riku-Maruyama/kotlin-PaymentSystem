@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.websarva.wings.android.transfersystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TransferSystem">
+        <activity
+            android:name=".BranchSearch"
+            android:exported="false"
+            android:label="支店検索" />
+        <activity
+            android:name=".FinancialInstituationSearch"
+            android:exported="false"
+            android:label="金融機関検索" />
+        <activity
+            android:name=".RegisteredAccount"
+            android:exported="false"
+            android:label="登録してある口座"/>
+        <activity
+            android:name=".PastTransferHistory"
+            android:exported="false"
+            android:label="過去に振込した先"/>
+        <activity
+            android:name=".FinancialInstitutionSelection"
+            android:exported="false"
+            android:label="金融機関選択" />
+        <activity
+            android:name=".TransferTypeSelect"
+            android:exported="false"
+            android:label="振込種類選択" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
